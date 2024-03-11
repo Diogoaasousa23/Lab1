@@ -8,22 +8,24 @@
 <body>
     <button id="btn-voltar" onclick="window.history.back()">Voltar</button>
 
-    <div class="center">
-        <div class="login-box">
-            <h2>Login</h2>
-            <form action="exemplo.php" method="post">
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                </div>
-                <div>
-                    <label for="lname">Password:</label><br>
-                    <input type="password" id="lname" name="lname"><br><br>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+    <div class="login-title">
+        <h2>Login</h2>
+
+    <div class="login-container">
+        <form action="exemplo.php" method="post">
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password" style="margin-right: 0.5px;">Password:</label>
+                <input type="password" id="password" name="password"><br>
+            </div> 
+           <input type="submit" style="margin-left: 74.5px;" value="Login"> &ThinSpace;
+            <a href="recuperar_password.html">Recuperar Senha?</a>
+        </form>
     </div>
-    <div class="footer">&copy;<span id="year"> </span><span> Copyright 2024 - O meu site de Login </span></div>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Copyright 2024 - Todos os direitos reservados por Capsule Corp. </span></div>
 </body>
 </html>

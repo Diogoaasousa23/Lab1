@@ -3,33 +3,44 @@
 <head>
     <title> A minha primeira página</title>
     <link rel="stylesheet" href="estilo.css">
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 </head>
 <body>
     <button id="btn-voltar" onclick="window.history.back()">Voltar</button>
 
-    <img src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2f2021%2f07%2f01%2f18%2fLogo-276804_68710_185052533_201565127.jpg" class="imagem-center" width="200" height="150">
-    <h2>Registro</h2>
+    <div class="sign-title">
+        <h2>Registro</h2>
+    </div>
 
-    <form action="processar_registro.php" method="post">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required><br><br>
-    
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-    
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required><br><br>
-    
-      <label for="confirmar_senha">Confirmar Senha:</label>
-      <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
-    
-      <input type="checkbox" id="aceitar_termos" name="aceitar_termos" required>
-      <label for="aceitar_termos">Eu concordo com os termos e condições.</label><br><br>
-    
-      <button type="submit">Registrar</button>
-    </form>
-    
-    <div class="footer">&copy;<span id="year"> </span><span> Copyright 2024 - O meu site de Login </span></div>
+    <div class="sign-container">
+        <form action="processar_registro.php" method="post">
+            <div class="input-container">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <div class="input-container">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br>
+            </div>
+            <div class="input-container">
+                <label for="confirmar_senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required><br>
+            </div>
+            <div class="input-container">
+              <input type="checkbox" id="aceitar_termos" name="aceitar_termos" requireds>
+              <label for="aceitar_termos" style="margin-left: 10px;">Concordo com os <a href="termos.html" target="_blank">termos de uso</a> e as <a href="privacidade.html" target="_blank">politica de privacidade</a>.</label><br>
+          </div>
+            <div class="button-container">
+                <button type="submit" style="margin-left: 225.5px;">Registrar</button> &ThickSpace;
+                <a href="learn_more.html" target="_blank">Saber mais</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Copyright 2024 - Todos os direitos reservados por Capsule Corp. </span></div>
 </body>
 </html>
