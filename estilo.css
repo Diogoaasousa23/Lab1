@@ -31,7 +31,7 @@ p {color: blue;}
 }
 
 .btn {
-    background-color: gray;
+    background-color: rgb(228, 228, 228);
     border: 1px solid #ccc;
     color: #333;
     padding: 10px 20px;
