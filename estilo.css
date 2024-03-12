@@ -1,6 +1,5 @@
 body {background-color: white}
-h1 {color: red;}
-p {color: blue;}
+h1 {color: black;}
 
 .center {
     display: flex;
